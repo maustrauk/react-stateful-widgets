@@ -21,7 +21,7 @@ export const listOfAwesome = [
   { id: '3', name: 'Evelyn Boyd Granville' },
   { id: '4', name: 'Mary Kenneth Keller' },
   { id: '5', name: 'Frances Allen' },
-  { id: '6', name: 'Carol Shaw' },
+  { id: '6', name: 'Carol Shaw' }
 ];
 
 
@@ -37,7 +37,8 @@ export default function Programmers() {
     // It's going to utilize both slices of state to return the _name_ of the featured dev.
     // The beauty of closures is that we can "see" both slices of state from this region
     // of the program, without needing to inject the information through arguments.
-    return programmers[programmerId].name;
+    return programmers[programmerId-1].name;
+    
   };
 
   const style = {
